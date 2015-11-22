@@ -65,5 +65,5 @@ writeoutput <- function(path,final_data_set){
       #Finally we write down the content of the dataset to disk
       write.table(final_data_set,paste0(path,"/output.txt"),row.name=FALSE)
 }
-############main fucnction to call to clean the data set############
+############main function to call to clean the data set############
 gettidydata <- function(){ writeoutput(getwd(),tidydataset(getwd())) }
